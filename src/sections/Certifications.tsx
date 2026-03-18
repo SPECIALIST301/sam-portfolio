@@ -27,10 +27,10 @@ const Certifications: React.FC = () => {
                         <div className="cert-column">
                             <h3>Software Tools</h3>
                             <ul>
-                                <li><span>•</span> Operating systems & Utilities</li>
-                                <li><span>•</span> Office & productivity</li>
-                                <li><span>•</span> Networking & security</li>
-                                <li><span>•</span> Diagnostic & troubleshooting</li>
+                                <li><span>•</span> Visual Studio Code</li>
+                                <li><span>•</span> Microsoft Office Suite</li>
+                                <li><span>•</span> Wireshark</li>
+                                <li><span>•</span> CPU-Z / HWMonitor</li>
                                 <li><span>•</span> Adobe Illustrator</li>
                                 <li><span>•</span> Canva</li>
                                 <li><span>•</span> Kali Linux</li>
