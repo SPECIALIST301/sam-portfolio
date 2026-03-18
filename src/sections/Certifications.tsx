@@ -19,28 +19,31 @@ const Certifications: React.FC = () => {
                                 <li><span>•</span> CompTIA Security+</li>
                                 <li><span>•</span> Microsoft Certified Professional</li>
                                 <li><span>•</span> Cisco CCNA</li>
+                                <li><span>•</span> TVET/CDACC Diploma</li>
+                                <li><span>•</span> Graphic Design</li>
                             </ul>
                         </div>
 
                         <div className="cert-column">
                             <h3>Software Tools</h3>
                             <ul>
-                                <li><span>•</span> Active Directory</li>
-                                <li><span>•</span> VMware & Hyper-V</li>
-                                <li><span>•</span> TeamViewer</li>
-                                <li><span>•</span> Wireshark</li>
-                                <li><span>•</span> Ticketing Systems</li>
+                                <li><span>•</span> Operating systems & Utilities</li>
+                                <li><span>•</span> Office & productivity</li>
+                                <li><span>•</span> Networking & security</li>
+                                <li><span>•</span> Diagnostic & troubleshooting</li>
                             </ul>
                         </div>
 
                         <div className="cert-column">
                             <h3>Specializations</h3>
                             <ul>
-                                <li><span>•</span> Disaster Recovery</li>
-                                <li><span>•</span> System Automation</li>
-                                <li><span>•</span> IT Asset Management</li>
-                                <li><span>•</span> Performance Optimization</li>
-                                <li><span>•</span> Vendor Management</li>
+                                <li><span>•</span> Networking</li>
+                                <li><span>•</span> Cybersecurity</li>
+                                <li><span>•</span> System administration</li>
+                                <li><span>•</span> Hardware repair</li>
+                                <li><span>•</span> Cloud services</li>
+                                <li><span>•</span> Technical support</li>
+                                <li><span>•</span> Graphic Design and web development</li>
                             </ul>
                         </div>
                     </div>
