@@ -4,20 +4,55 @@ import { Card } from '../components/Card';
 import { ExternalLink, Github } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
-const projects = [
+import sysInfoImg from '../assets/projects/system_information_config_1773864414783.png';
+import netDbDevImg from '../assets/projects/networking_database_software_1773864434724.png';
+import cyberSecImg from '../assets/projects/cybersecurity_protection_1773864488900.png';
+import ictSupportImg from '../assets/projects/ict_support_troubleshooting_1773864574577.png';
+import cloudComputingImg from '../assets/projects/cloud_computing_1773864643194.png';
+
+type Project = {
+    title: string;
+    description: string;
+    image: string;
+    tags: string[];
+    links: { github?: string; live?: string };
+};
+
+const projects: Project[] = [
     {
-        title: 'Enterprise Network Overhaul',
-        description: 'Redesigned and implemented a complete network infrastructure for a 200+ employee company, improving speed by 300% and enhancing security protocols.',
-        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800',
-        tags: ['Networking', 'Infrastructure', 'Security'],
-        links: { github: '#', live: '#' }
+        title: 'System Information and Configuration',
+        description: 'Designed and implemented robust system configurations for enterprise networks, ensuring optimal hardware efficiency, and system reliability.',
+        image: sysInfoImg,
+        tags: ['SysAdmin', 'Hardware', 'Configuration'],
+        links: {}
     },
     {
-        title: 'Server Migration & Virtualization',
-        description: 'Led migration of physical servers to VMware virtualized environment, reducing costs by 40% and improving system reliability and backup capabilities.',
-        image: 'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?auto=format&fit=crop&q=80&w=800',
-        tags: ['Virtualization', 'Server', 'Cloud'],
-        links: { live: '#' }
+        title: 'Networking, Database & Software Dev',
+        description: 'Developed scalable database solutions integrated with secure networking protocols to support high-availability operations and robust software architecture.',
+        image: netDbDevImg,
+        tags: ['Networking', 'Database', 'Databases'],
+        links: {}
+    },
+    {
+        title: 'Cybersecurity and System Protection',
+        description: 'Deployed advanced cybersecurity measures including intrusion detection systems, robust firewalls, and deep data encryption layers to protect organizational assets.',
+        image: cyberSecImg,
+        tags: ['Cybersecurity', 'Security', 'Defense'],
+        links: {}
+    },
+    {
+        title: 'ICT Support and Troubleshooting',
+        description: 'Provided comprehensive ICT support, rapid issue resolution, and precise hardware diagnostics, drastically reducing system downtime and improving workflows.',
+        image: ictSupportImg,
+        tags: ['ICT Support', 'Diagnostics', 'Troubleshooting'],
+        links: {}
+    },
+    {
+        title: 'Cloud Computing',
+        description: 'Architected and migrated legacy systems into modern cloud computing environments, leveraging advanced virtualization to scale infrastructure efficiently.',
+        image: cloudComputingImg,
+        tags: ['Cloud', 'Virtualization', 'Infrastructure'],
+        links: {}
     }
 ];
 
