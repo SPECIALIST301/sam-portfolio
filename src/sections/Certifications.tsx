@@ -31,6 +31,10 @@ const Certifications: React.FC = () => {
                                 <li><span>•</span> Office & productivity</li>
                                 <li><span>•</span> Networking & security</li>
                                 <li><span>•</span> Diagnostic & troubleshooting</li>
+                                <li><span>•</span> Adobe Illustrator</li>
+                                <li><span>•</span> Canva</li>
+                                <li><span>•</span> Kali Linux</li>
+                                <li><span>•</span> AnyDesk</li>
                             </ul>
                         </div>
 
