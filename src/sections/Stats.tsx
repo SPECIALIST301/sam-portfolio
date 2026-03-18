@@ -5,10 +5,10 @@ import { Clock, Users, CheckCircle, Award } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const statsData = [
-    { icon: <Clock size={24} />, number: '5+', label: 'Years Experience' },
-    { icon: <Users size={24} />, number: '100+', label: 'Clients Served' },
-    { icon: <CheckCircle size={24} />, number: '200+', label: 'Projects Completed' },
-    { icon: <Award size={24} />, number: '8', label: 'Certifications' }
+    { icon: <Clock size={24} />, number: '2+', label: 'Years Experience' },
+    { icon: <Users size={24} />, number: '20+', label: 'Clients Served' },
+    { icon: <CheckCircle size={24} />, number: '5+', label: 'Projects Completed' },
+    { icon: <Award size={24} />, number: '5', label: 'Certifications' }
 ];
 
 const Stats: React.FC = () => {
