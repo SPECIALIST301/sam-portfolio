@@ -1,0 +1,117 @@
+.projects-section {
+    background-color: var(--bg-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.project-image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+.project-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-links {
+    opacity: 1;
+}
+
+.project-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--text-primary);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.project-link:hover {
+    background-color: var(--accent-blue);
+    color: white;
+}
+
+.project-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+}
+
+.project-description {
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    font-size: 0.95rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background-color: var(--accent-light);
+    color: var(--accent-blue);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
